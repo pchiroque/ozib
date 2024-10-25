@@ -40,8 +40,14 @@ fit <- ozib::betabart(X = betabart_data$X, Y = betabart_data$Y,
                       hypers_ = hypers, opts_ = opts)
 print(duration <- Sys.time() - time)
 
-saveRDS(list(y = betabart_data$Y, x = betabart_data$X, fit = fit, time = duration),
-        file.path("fit_ozib.rds"))
+fit <- list(y = betabart_data$Y, x = betabart_data$X, fit = fit)
+
+y.predict <- ozib::betabart.hurdle.predict(fit)
+
+fig.bart <- ozib::betabart.hurdle.validation(y.predict, fit$y)
+
+fig.bart
+
 ```
 
 
