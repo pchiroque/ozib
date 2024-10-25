@@ -10,9 +10,16 @@ The covariates must be a ´data.frame` and have the same numbers of the rows as 
 ### Example 
 
 ```R
+
 set.seed(4)
 
 rm(list = ls())
+
+remotes::install_github("pchiroque/ozib")
+remotes::install_github("pchiroque/betabart")
+
+library(ozib)
+library(betabart)
 
 hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
                        W = betabart_data$X,
