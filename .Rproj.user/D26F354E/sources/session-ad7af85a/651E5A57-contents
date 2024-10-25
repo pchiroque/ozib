@@ -1,0 +1,48 @@
+library(ozib)
+library(tidyverse)
+library(betabart)
+
+setwd("~/Documents/Sol/gammabart/real_data")
+data <- read.csv("~/Documents/Sol/gammabart/real_data/imp1_all.csv")
+#Going to standardize the following predictors with large variances
+data <- data %>% mutate_at(c('nPHDbl','age','pil','bdi0','anger0','adstotal','rbbtots'), ~(scale(.) %>%as.vector))
+
+y <- data$percentNN #outcome
+trt <- data$trt # 1 = CBT, 2 = MET, 3 = TSF #treatment variable
+cov <- subset(data, select = -c(id, trt,percentNN, oneYN)) # covariates
+dim(cov)
+
+xt <- (cov[trt == 3,]) #covariates for TSF group
+xm <-(cov[trt == 2,]) # covariates for MET group
+xc <- (cov[trt == 1,]) # Covariates for CBT group
+yt <- y[trt == 3]   #outcome for TSF group
+ym <- y[trt == 2]   #outcome for MET group          
+yc <- y[trt == 1]   # outcome for CBT group
+
+datat<-data.frame(yt,xt)
+datam<- data.frame(ym,  xm)
+datac<-data.frame(yc,xc)
+
+betabart_data <- list(
+  Y = datat$yt,
+  Ydivided = prepare.response(datat$yt),
+  X = SoftBart::quantile_normalize_bart(xt)
+)
+
+hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
+                        W = betabart_data$X,
+                        delta1 = betabart_data$Ydivided$y1,
+                        delta0 = betabart_data$Ydivided$y0)
+opts   <- Opts()
+opts$approximate_density <- TRUE
+
+time <- Sys.time()
+fit <- betabart(X = betabart_data$X, Y = betabart_data$Y,
+                delta1 = betabart_data$Ydivided$y1,
+                delta0 = betabart_data$Ydivided$y0,
+                yb = betabart_data$Ydivided$yb,
+                X_test = betabart_data$X,
+                hypers_ = hypers, opts_ = opts)
+print(duration <- Sys.time() - time)
+
+

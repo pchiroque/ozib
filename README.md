@@ -1,0 +1,49 @@
+## Installation
+Install this package via `remotes::install_github("pchiroque/betabart")`.
+
+## Usage 
+
+The response `y` must be a vector with $y \in[0,1]$.
+
+The covariates must be a ´data.frame` and have the same numbers of the rows as the response without intercept.
+
+### Example 
+
+```R
+set.seed(4)
+
+rm(list = ls())
+
+y <- df$y
+
+sampleX <- df[,c(X1,X2,X3)]
+
+betabart_data <- list(
+  Y = y,
+  Ydivided = betabart::prepare.response(y),
+  X = SoftBart::quantile_normalize_bart(sampleX)
+)
+
+hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
+                       W = betabart_data$X,
+                       delta1 = betabart_data$Ydivided$y1,
+                       delta0 = betabart_data$Ydivided$y0)
+opts   <- Opts()
+opts$approximate_density <- TRUE
+
+time <- Sys.time()
+fit <- ozib::betabart(X = betabart_data$X, Y = betabart_data$Y,
+                      delta1 = betabart_data$Ydivided$y1,
+                      delta0 = betabart_data$Ydivided$y0,
+                      yb = betabart_data$Ydivided$yb,
+                      X_test = betabart_data$X,
+                      hypers_ = hypers, opts_ = opts)
+print(duration <- Sys.time() - time)
+
+saveRDS(list(y = betabart_data$Y, x = betabart_data$X, fit = fit, time = duration),
+        file.path("fit_ozib.rds"))
+```
+
+
+
+

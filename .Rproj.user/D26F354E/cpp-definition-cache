@@ -1,0 +1,928 @@
+[
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+        "file_last_write": 1711621617.0,
+        "definitions": [
+            {
+                "usr": "c:functions.cpp@79@macro@M_SQRT_2PI",
+                "kind": 9,
+                "parent_name": "",
+                "name": "M_SQRT_2PI",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 6,
+                "column": 9,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@sample_class#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sample_class(const arma::vec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 9,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@sample_class#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sample_class(int)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 24,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@logit#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "logit(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 38,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@expit#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "expit(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 42,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@log_sum_exp#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "log_sum_exp(const arma::vec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 46,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rlgam#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rlgam(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 52,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rdirichlet#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rdirichlet(const arma::vec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 78,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@alpha_to_rho#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "alpha_to_rho(double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 89,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rho_to_alpha#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rho_to_alpha(double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 93,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@logpdf_beta#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "logpdf_beta(double, double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 97,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@do_mh#d#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "do_mh(double, double, double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 101,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@randnt#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "randnt(double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 110,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@randnt#d#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "randnt(double, double, double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.cpp",
+                "line": 171,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/functions.h",
+        "file_last_write": 1711621617.0,
+        "definitions": [],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/hypers.cpp",
+        "file_last_write": 1729312381.0,
+        "definitions": [
+            {
+                "usr": "c:@S@Hypers@F@UpdateAlpha#",
+                "kind": 7,
+                "parent_name": "Hypers",
+                "name": "UpdateAlpha",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/hypers.cpp",
+                "line": 6,
+                "column": 14,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Hypers@F@SampleVar#1",
+                "kind": 7,
+                "parent_name": "Hypers",
+                "name": "SampleVar",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/hypers.cpp",
+                "line": 20,
+                "column": 13,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+        "file_last_write": 1729711854.0,
+        "definitions": [
+            {
+                "usr": "c:@F@probability_node_birth#*$@S@Node#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "probability_node_birth(Node *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 6,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@birth_node#*$@S@Node#*d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "birth_node(Node *, double *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 10,
+                "column": 7,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@death_node#*$@S@Node#*d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "death_node(Node *, double *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 18,
+                "column": 7,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@birth_death#*$@S@Node#&1$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "birth_death(Node *, const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 26,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@node_birth#*$@S@Node#&1$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "node_birth(Node *, const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 40,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@node_death#*$@S@Node#&1$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "node_death(Node *, const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 89,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@change_decision_rule#*$@S@Node#&1$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "change_decision_rule(Node *, const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 135,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@UpdateS#&$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "UpdateS(std::vector<Node *> &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 175,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@do_burn_in#$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S1_#&$@S@MyData#&1$@S@Opts#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "do_burn_in(std::vector<Node *>, MyData &, const Opts &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/mcmc.cpp",
+                "line": 193,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+        "file_last_write": 1729734623.0,
+        "definitions": [
+            {
+                "usr": "c:@F@IterateGibbsNoS#&$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S2_#&$@S@MyData#&1$@S@Opts#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "IterateGibbsNoS(std::vector<Node *> &, MyData &, const Opts &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 18,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@IterateGibbsWithS#&$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S2_#&$@S@MyData#&1$@S@Opts#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "IterateGibbsWithS(std::vector<Node *> &, MyData &, const Opts &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 26,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@TreeBackfit#&$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S2_#&$@S@MyData#&1$@S@Opts#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "TreeBackfit(std::vector<Node *> &, MyData &, const Opts &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 36,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_reg#*$@S@Node#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_reg(Node *, MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 55,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_reg#*$@S@Node#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_reg(Node *, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 65,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_reg#*$@S@Node#&$@N@arma@S@Row>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_reg(Node *, rowvec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 75,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta1#$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S1_#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta1(std::vector<Node *>, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 87,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta0#$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S1_#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta0(std::vector<Node *>, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 96,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_reg#$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S1_#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_reg(std::vector<Node *>, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 105,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta1#*$@S@Node#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta1(Node *, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 114,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta1#*$@S@Node#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta1(Node *, MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 124,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta1#*$@S@Node#&$@N@arma@S@Row>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta1(Node *, rowvec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 134,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta0#*$@S@Node#&$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta0(Node *, arma::mat &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 146,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta0#*$@S@Node#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta0(Node *, MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 156,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@predict_theta0#*$@S@Node#&$@N@arma@S@Row>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "predict_theta0(Node *, rowvec &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 166,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@BackFit#*$@S@Node#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "BackFit(Node *, MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 178,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Refit#*$@S@Node#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Refit(Node *, MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 187,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@UpdateParams#&$@S@MyData#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "UpdateParams(MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 196,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@LogLT#&1$@S@MyData#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "LogLT(const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 219,
+                "column": 14,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@UpdateSuffStat#&1$@S@MyData#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "UpdateSuffStat(const MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 276,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@AddSuffStat#&1$@S@MyData#I#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "AddSuffStat(const MyData &, int)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 288,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@AddSuffStatZ#&1$@S@MyData#I#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "AddSuffStatZ(const MyData &, int)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 306,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@ResetSuffStat#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "ResetSuffStat",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 332,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@cauchy_jacobian#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "cauchy_jacobian(double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 349,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@UpdateShape#*$@S@Hypers#&$@S@MyData#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "UpdateShape(Hypers *, MyData &, bool)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 376,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@UpdateZ#&$@S@MyData#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "UpdateZ(MyData &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/modelspecific.cpp",
+                "line": 400,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/node.cpp",
+        "file_last_write": 1728985251.0,
+        "definitions": [
+            {
+                "usr": "c:@S@Node@F@GetLimits#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "GetLimits",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/node.cpp",
+                "line": 45,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@BirthLeaves#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "BirthLeaves",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/node.cpp",
+                "line": 68,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@is_left#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "is_left",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/node.cpp",
+                "line": 84,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node@F@DeleteLeaves#",
+                "kind": 7,
+                "parent_name": "Node",
+                "name": "DeleteLeaves",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/node.cpp",
+                "line": 88,
+                "column": 12,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+        "file_last_write": 1711621617.0,
+        "definitions": [
+            {
+                "usr": "c:@F@growth_prior#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "growth_prior(int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 11,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@depth#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "depth(int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 15,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@leaves#*I#&I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "leaves(int *, int &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 19,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@leaves#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "leaves(int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 29,
+                "column": 20,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@not_grand_branches#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "not_grand_branches(int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 35,
+                "column": 20,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@not_grand_branches#&I#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "not_grand_branches(int &, int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 41,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rand#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rand(int)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 55,
+                "column": 7,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@get_var_counts#&I#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "get_var_counts(int &, const int &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 64,
+                "column": 12,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@get_var_counts#&$@N@arma@S@Col>#i#*I#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "get_var_counts(arma::uvec &, int *, const int &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 73,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@forest_loglik#&I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "forest_loglik(int &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 82,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@tree_loglik#*I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "tree_loglik(int *)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 90,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@init_forest#&I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "init_forest(int &)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/nodefuncs.cpp",
+                "line": 103,
+                "column": 20,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.cpp",
+        "file_last_write": 1729714284.0,
+        "definitions": [
+            {
+                "usr": "c:@F@beta_bart#&$@N@arma@S@Mat>#d#&$@N@arma@S@Col>#d#&$@N@arma@S@Col>#i#S4_#S2_#S0_#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#S6_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "beta_bart(arma::mat &, arma::vec &, arma::uvec &, arma::uvec &, arma::vec &, arma::mat &, List, List)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.cpp",
+                "line": 7,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+        "file_last_write": 1729368602.0,
+        "definitions": [
+            {
+                "usr": "c:@S@Hypers",
+                "kind": 3,
+                "parent_name": "",
+                "name": "Hypers",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+                "line": 29,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@MyData",
+                "kind": 3,
+                "parent_name": "",
+                "name": "MyData",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+                "line": 77,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@SuffStats",
+                "kind": 3,
+                "parent_name": "",
+                "name": "SuffStats",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+                "line": 139,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Node",
+                "kind": 3,
+                "parent_name": "",
+                "name": "Node",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+                "line": 157,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Opts",
+                "kind": 3,
+                "parent_name": "",
+                "name": "Opts",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/recbart.h",
+                "line": 198,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.cpp",
+        "file_last_write": 1729715364.0,
+        "definitions": [
+            {
+                "usr": "c:@F@slice_sampler#d#*$@S@Loglik#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "slice_sampler(double, Loglik *, double, double, double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.cpp",
+                "line": 3,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+        "file_last_write": 1729734739.0,
+        "definitions": [
+            {
+                "usr": "c:slice.h@68@macro@MAX_ITER",
+                "kind": 9,
+                "parent_name": "",
+                "name": "MAX_ITER",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 5,
+                "column": 9,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Loglik",
+                "kind": 3,
+                "parent_name": "",
+                "name": "Loglik",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 6,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@Loglik@F@L#d#",
+                "kind": 7,
+                "parent_name": "Loglik",
+                "name": "L(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 7,
+                "column": 18,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ShapeWeight",
+                "kind": 3,
+                "parent_name": "",
+                "name": "ShapeWeight",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 10,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ShapeWeight@F@L#d#",
+                "kind": 7,
+                "parent_name": "ShapeWeight",
+                "name": "L(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 18,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ShapeLoglik",
+                "kind": 3,
+                "parent_name": "",
+                "name": "ShapeLoglik",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 49,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ShapeLoglik@F@L#d#",
+                "kind": 7,
+                "parent_name": "ShapeLoglik",
+                "name": "L(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 54,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@RhoLoglik",
+                "kind": 3,
+                "parent_name": "",
+                "name": "RhoLoglik",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 73,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@RhoLoglik@F@L#d#",
+                "kind": 7,
+                "parent_name": "RhoLoglik",
+                "name": "L(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 80,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@SigmaLoglik",
+                "kind": 3,
+                "parent_name": "",
+                "name": "SigmaLoglik",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 97,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@SigmaLoglik@F@L#d#",
+                "kind": 7,
+                "parent_name": "SigmaLoglik",
+                "name": "L(double)",
+                "file": "/home/anthorg/Documents/Sol/gammabart/ozib/src/slice.h",
+                "line": 102,
+                "column": 10,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

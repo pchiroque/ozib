@@ -1,0 +1,32 @@
+{
+    "args": [
+        "-std=gnu++17",
+        "-I/usr/share/R/include",
+        "-DNDEBUG",
+        "-fopenmp",
+        "-fpic",
+        "-fno-omit-frame-pointer",
+        "-ffile-prefix-map=/build/r-base-YnquTi/r-base-4.4.1=.",
+        "-fstack-protector-strong",
+        "-fstack-clash-protection",
+        "-fcf-protection",
+        "-fdebug-prefix-map=/build/r-base-YnquTi/r-base-4.4.1=/usr/src/r-base-4.4.1-3.2404.0",
+        "-D_FORTIFY_SOURCE=3",
+        "-I/usr/lib/R/site-library/Rcpp/include",
+        "-I/usr/lib/R/site-library/RcppArmadillo/include",
+        "-DEIGEN_DONT_VECTORIZE",
+        "-I/usr/include/c++/13",
+        "-I/usr/include/x86_64-linux-gnu/c++/13",
+        "-I/usr/include/c++/13/backward",
+        "-I/usr/lib/gcc/x86_64-linux-gnu/13/include",
+        "-I/usr/local/include",
+        "-I/usr/include/x86_64-linux-gnu",
+        "-I/usr/include"
+    ],
+    "pch": "RcppArmadillo",
+    "is_cpp": true,
+    "hash": "1682444257172598600317259861621725986167",
+    "compiler": "3953919279263754508",
+    "rversion": "4.4.1",
+    "dbversion": 4
+}

@@ -1,0 +1,45 @@
+updateOneMu01 <- function(r, prior) {
+  var <- (1 / prior$variance + length(r) / 1) ^ (-1)
+  rnorm(1L, var * (prior$mean / prior$variance + sum(r, na.rm = TRUE) / 1), sqrt(var))
+}
+
+sampleZ <- function(y,y.hat){
+  pointZero <- pnorm(0, y.hat)
+  suppressWarnings(qnorm(runif(length(y),
+                               ifelse(y, pointZero, 0),
+                               ifelse(y, 1, pointZero)),
+                         y.hat)
+  )
+}
+
+trees <- 50
+priorMu1 = list(mean = 0, variance = 1)
+
+y <- rbinom(100, 1, pnorm(2))
+
+theta <- numeric(1000)
+theta[1] <- 0
+for (i in 2:length(theta)) {
+  z <- sampleZ(y, theta[i - 1L])
+  theta[i] <- updateOneMu01(z, priorMu1)
+}
+ts.plot(theta)
+abline(h = 2, col = "red")
+
+updateOneMub <- function(y, prior, eta) {
+  lambda <- rgamma(1,length(y)+prior$a_beta,prior$b_beta-sum(log(y), na.rm = TRUE))
+  # if (length(eta) != length(y)) print(list(eta, y))
+  log(lambda)
+}
+
+priorMub = list(a_beta = 0.2, b_beta = 0.1)
+y <- rbeta(100, exp(2), 1)
+
+lambda <- numeric(1000)
+lambda[1] <- 0
+for (i in 2:length(lambda)) {
+  lambda[i] <- updateOneMub(y, priorMub, lambda[i - 1L])
+}
+ts.plot(lambda)
+abline(h = 2, col = "red")
+
