@@ -14,21 +14,11 @@ set.seed(4)
 
 rm(list = ls())
 
-y <- df$y
-
-sampleX <- df[,c(X1,X2,X3)]
-
-betabart_data <- list(
-  Y = y,
-  Ydivided = betabart::prepare.response(y),
-  X = SoftBart::quantile_normalize_bart(sampleX)
-)
-
 hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
                        W = betabart_data$X,
                        delta1 = betabart_data$Ydivided$y1,
                        delta0 = betabart_data$Ydivided$y0)
-opts   <- Opts()
+opts   <- ozib::Opts()
 opts$approximate_density <- TRUE
 
 time <- Sys.time()
