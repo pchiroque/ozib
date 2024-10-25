@@ -1,6 +1,6 @@
 #' @export
 
-validation.hurdle.betabart <- function(y.predict, y){
+betabart.hurdle.validation <- function(y.predict, y){
   num.iter <- dim(y.predict)[1]
   y.predict <- y.predict %>% t %>% as.data.frame()
 
