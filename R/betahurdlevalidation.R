@@ -10,11 +10,12 @@ betabart.hurdle.validation <- function(y.predict, y){
     gather(key= chain,value = value,`iter[1]`:`iter[2500]`) %>%
     ggplot(aes(x=value,color=chain)) +
     scale_color_manual(values = c(rep("lightblue",num.iter),"black") )+
-    #  scale_color_manual(values = c(rep("lightblue",582),"black") )+
     geom_density(alpha=0.5, position = "identity")  +
     guides(color="none")+
     geom_density(aes(s),data=data.frame(s=y),color="black")+
-    labs(title=paste0("Treatment-","mt-cpp"))
+    ylim(0,10)+
+    labs(title="",x="")
+  
 
   fig
 }
