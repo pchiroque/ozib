@@ -20,6 +20,7 @@ remotes::install_github("pchiroque/betabart")
 
 library(ozib)
 library(betabart)
+library(SoftBart)
 
 y <- df$y
 sampleX <- df$x
