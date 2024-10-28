@@ -21,6 +21,16 @@ remotes::install_github("pchiroque/betabart")
 library(ozib)
 library(betabart)
 
+y <- df$y
+sampleX <- df$x
+
+betabart_data <- list(
+  Y = y,
+  Ydivided = betabart::prepare.response(y),
+  X = SoftBart::quantile_normalize_bart(sampleX)
+)
+
+
 hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
                        W = betabart_data$X,
                        delta1 = betabart_data$Ydivided$y1,
