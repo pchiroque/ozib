@@ -278,7 +278,7 @@
     },
     {
         "file": "C:/Users/Pamela/OneDrive - Microsoft Cloud - Bereich Universität Regensburg/Research-UR/Baseline-1April2023/Alcohol-PITE-Bart/bart_Pam/Cpp-betabart/ozib/src/modelspecific.cpp",
-        "file_last_write": 1729734623.0,
+        "file_last_write": 1730557489.0,
         "definitions": [
             {
                 "usr": "c:@F@IterateGibbsNoS#&$@N@std@S@vector>#*$@S@Node#$@N@std@S@allocator>#S2_#&$@S@MyData#&1$@S@Opts#",
@@ -536,7 +536,7 @@
                 "parent_name": "",
                 "name": "UpdateZ(MyData &)",
                 "file": "C:/Users/Pamela/OneDrive - Microsoft Cloud - Bereich Universität Regensburg/Research-UR/Baseline-1April2023/Alcohol-PITE-Bart/bart_Pam/Cpp-betabart/ozib/src/modelspecific.cpp",
-                "line": 400,
+                "line": 402,
                 "column": 6,
                 "hidden": false
             }
@@ -793,7 +793,7 @@
     },
     {
         "file": "C:/Users/Pamela/OneDrive - Microsoft Cloud - Bereich Universität Regensburg/Research-UR/Baseline-1April2023/Alcohol-PITE-Bart/bart_Pam/Cpp-betabart/ozib/src/slice.cpp",
-        "file_last_write": 1729715364.0,
+        "file_last_write": 1730461135.0,
         "definitions": [
             {
                 "usr": "c:@F@slice_sampler#d#*$@S@Loglik#d#d#d#",
@@ -810,10 +810,10 @@
     },
     {
         "file": "C:/Users/Pamela/OneDrive - Microsoft Cloud - Bereich Universität Regensburg/Research-UR/Baseline-1April2023/Alcohol-PITE-Bart/bart_Pam/Cpp-betabart/ozib/src/slice.h",
-        "file_last_write": 1729738395.0,
+        "file_last_write": 1730405834.0,
         "definitions": [
             {
-                "usr": "c:slice.h@68@macro@MAX_ITER",
+                "usr": "c:slice.h@72@macro@MAX_ITER",
                 "kind": 9,
                 "parent_name": "",
                 "name": "MAX_ITER",

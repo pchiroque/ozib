@@ -378,14 +378,16 @@ void UpdateShape(Hypers* hypers, MyData& data, bool approximate) {
   double sum_log_Y = data.sumlog1my;
   double n = data.nb;
   double sum_v_Y = 0.;
+  double sum_log_v = 0;
   for (int i = 0; i < data.Y.size(); i++) {
     if ((data.Y(i) > 0 ) && data.Y(i) < 1) 
       sum_v_Y += log(data.Y(i)) * data.lambda_hat(i);
+      sum_log_v += log(data.lambda_hat[i]);
   }
   ShapeWeight* shape_weight;
   
   if (approximate) {
-    double sum_log_v = sum(log(data.lambda_hat));
+//    double sum_log_v = sum(log(data.lambda_hat));
     shape_weight = new ShapeWeight(sum_log_v, sum_log_Y, sum_v_Y, n);
   } else {
     shape_weight = new ShapeWeight(data.lambda_hat, sum_log_Y, sum_v_Y, n);
