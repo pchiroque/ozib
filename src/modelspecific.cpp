@@ -393,7 +393,7 @@ void UpdateShape(Hypers* hypers, MyData& data, bool approximate) {
 //    double sum_log_v = sum(log(data.lambda_hat));
     shape_weight = new ShapeWeight(sum_log_v, sum_log_Y, sum_v_Y, n);
   } else {
-    shape_weight = new ShapeWeight(data.lambda_hat, sum_log_Y, sum_v_Y, n);
+    shape_weight = new ShapeWeight(lambda_hat, sum_log_Y, sum_v_Y, n);
   }
   
   double sigma_old = pow(hypers->shape, -0.5);
