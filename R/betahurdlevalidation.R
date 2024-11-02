@@ -14,7 +14,7 @@ betabart.hurdle.validation <- function(y.predict, y){
     geom_density(alpha=0.5, position = "identity")  +
     guides(color="none")+
     geom_density(aes(s),data=data.frame(s=y),color="black")+
-    labs(title=paste0("Treatment-","mt-cpp"))
+    labs(title=paste0(""))
 
   fig
 }
