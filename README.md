@@ -22,24 +22,28 @@ library(ozib)
 library(betabart)
 library(SoftBart)
 
-y <- df$y
-sampleX <- df$x
-
+x=as.data.frame(matrix(runif(300),ncol=3)) 
+y=rep(0,100)
+y=1/(1+exp(-(0.9*x$V1-0.2*x$V2+1.8*x$V3)))
+y[(x$V1+x$V2)<0.5]=0 
+y[(x$V1+x$V2+x$V3)>2.2]=1
+# load("data\betabart_data.rda")
 betabart_data <- list(
   Y = y,
   Ydivided = betabart::prepare.response(y),
-  X = SoftBart::quantile_normalize_bart(sampleX)
+  X = SoftBart::quantile_normalize_bart(x),
+  X_test = SoftBart::quantile_normalize_bart(x)
 )
-
 
 hypers <- ozib::Hypers(X = betabart_data$X, Y = betabart_data$Y,
                        W = betabart_data$X,
                        delta1 = betabart_data$Ydivided$y1,
                        delta0 = betabart_data$Ydivided$y0)
 opts   <- ozib::Opts()
-opts$approximate_density <- TRUE
+opts$approximate_density <- FALSE
 
 time <- Sys.time()
+
 fit <- ozib::betabart(X = betabart_data$X, Y = betabart_data$Y,
                       delta1 = betabart_data$Ydivided$y1,
                       delta0 = betabart_data$Ydivided$y0,
@@ -52,9 +56,10 @@ fit <- list(y = betabart_data$Y, x = betabart_data$X, fit = fit)
 
 y.predict <- ozib::betabart.hurdle.predict(fit)
 
-fig.bart <- ozib::betabart.hurdle.validation(y.predict, fit$y)
+fig.bart <- ozib::betabart.hurdle.validation(y.predict, y)
 
 fig.bart
+
 
 ```
 
