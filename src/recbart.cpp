@@ -25,6 +25,7 @@ List beta_bart(arma::mat& X,
   mat theta0_hat_test = zeros<mat>(opts.num_save, X_test.n_rows);
   mat theta1_hat_test = zeros<mat>(opts.num_save, X_test.n_rows);
   vec shape = zeros<vec>(opts.num_save);
+  mat logLik = zeros<mat>(opts.num_save, data.Y.size());
   
   std::vector<Node*> forest = init_forest(hypers);
 
@@ -57,6 +58,19 @@ List beta_bart(arma::mat& X,
     theta1_hat_test.row(i) = trans(predict_theta1(forest, X_test)) + hypers.theta_1;
     theta0_hat_test.row(i) = trans(predict_theta0(forest, X_test)) + hypers.theta_0;
     shape(i) = forest[0]->hypers->shape;
+    for (int ii = 0; ii < data.Y.size(); ii++) {
+      if (data.Y(ii) == 1.) {
+        logLik(i, ii) = R::pnorm(data.theta1_hat(ii), 0, 1, true, true);
+      } else if (data.Y(ii) == 0.) {
+        logLik(i, ii) = R::pnorm(-data.theta1_hat(ii), 0, 1, true, true) +
+          R::pnorm(data.theta0_hat(ii), 0, 1, true, true);
+      } else {
+        logLik(i, ii) = R::pnorm(-data.theta1_hat(ii), 0, 1, true, true) +
+          R::pnorm(-data.theta0_hat(ii), 0, 1, true, true) +
+          R::dbeta(data.Y(ii), forest[0]->hypers->shape *
+          data.lambda_hat(ii), forest[0]->hypers->shape, true);
+      }
+    }
   }
   Rcout << std::endl;
 
@@ -78,7 +92,8 @@ List beta_bart(arma::mat& X,
   out["theta1_hat_test"] = theta1_hat_test;
   out["theta0_hat_test"] = theta0_hat_test;
   out["shape"] = shape;
-
+  out["logLik"] = logLik;
+  
   return out;
 }
 
